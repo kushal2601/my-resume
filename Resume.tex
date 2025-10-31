@@ -1,0 +1,144 @@
+%-------------------------
+% Resume in Latex
+% Author : Modified for Kushal Kumar Maradana
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-0.05in}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Kushal Maradana} \\ \vspace{1pt}
+     \vspace{1pt}
+    \href{mailto:kushal.maradana2002@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{kushal.maradana2002@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/kushal-kumar-maradana-2a57071a2}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/kushal-kumar-maradana}} ~ 
+    \href{tel:+919390270483}{\raisebox{-0.2\height}\faPhone\ +91-9390270483}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {National Institute of Technology, Warangal}{July 2019 -- May 2023}
+      {Bachelor of Technology in Metallurgical and Materials Engineering} {CGPA: 6.66 / 10}
+ \resumeSubheading
+      {Sri Chaitanya Junior College, Visakhapatnam}{May 2017 -- May 2019}
+      {Board of Intermediate Education, Andhra Pradesh} {CGPA: 9.56 / 10}
+ \resumeSubheading
+      {Sri Sathya Sai Gurukulam, Rajahmundry}{May 2016 -- Mar 2017}
+      {ICSE Board} {Percentage: 89.2\%}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Leoforce Pvt. Ltd.}{July 2023 -- Present}
+  {Software Engineer}{Hyderabad, India}
+  \resumeItemListStart
+    \resumeItem{Designed and implemented multiple end-to-end features across web applications using \textbf{ReactJS}, \textbf{Next.js}, and \textbf{.NET}, improving product functionality and user engagement.}
+    \resumeItem{Developed and optimized \textbf{data-driven UI components} and reusable modules to enhance scalability, maintainability, and responsiveness.}
+    \resumeItem{Built dynamic front-end features with strong API integration and implemented performance optimization strategies to improve client-side rendering.}
+    \resumeItem{Integrated \textbf{real-time communication} using WebSockets for live chat and data synchronization features, ensuring smooth and responsive user experiences.}
+    \resumeItem{Implemented secure file upload, retrieval, and download flows using \textbf{AWS S3} and optimized backend communication for faster data access.}
+    \resumeItem{Collaborated with cross-functional teams to design REST APIs, manage data flows, and ensure consistent front-end and back-end integration.}
+    \resumeItem{Worked on PDF generation and automation features, leveraging \textbf{HTML-to-PDF rendering} and Base64 encoding for browser-based downloads.}
+    \resumeItem{Contributed to architectural discussions, improving feature reliability and reducing development time through modular code practices.}
+    \resumeItem{Utilized \textbf{OpenAI Agents SDK} to build intelligent agents, including an \textbf{Autopilot feature} that plans and executes tasks for users, enhancing productivity and user experience.}
+    \resumeItem{Integrated \textbf{Google Indexing API} and \textbf{Bing Indexing API} to automatically submit and update job postings on search engines, improving discoverability and SEO ranking of our career site.}
+    \resumeItem{Worked on an event-driven architecture leveraging \textbf{RabbitMQ}, where the microservice published and consumed events for job updates and notifications. Also implemented a scheduled \textbf{cron job} that dynamically generated and uploaded XML files to ensure Google crawlers always had the latest job listings for indexing on \textbf{Google for Jobs}.}
+    \resumeItem{Integrated \textbf{Amazon Cognito} for user authentication, implementing a custom \textbf{Lambda trigger} to handle sign-ups from third-party \textbf{OIDC providers} such as Google and LinkedIn, effectively enabling \textbf{"Sign up with Google"} functionality across the system.}
+    \resumeItem{Worked with \textbf{Elasticsearch} to index job-related data for faster and more efficient search and retrieval operations, improving performance and scalability of internal search services.}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {Goldman Sachs}{May 2022 -- July 2022}
+      {Summer Intern}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Worked with Goldman’s proprietary language \textbf{Slang} for data processing and analytics.}
+        \resumeItem{Developed interactive dashboards using \textbf{ReactJS} to visualize processed data and deployed the solution to production.}
+        \resumeItem{Gained exposure to large-scale data systems, debugging tools, and collaborative version control workflows.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} C++, SQL, JavaScript, Python. \\
+     \textbf{Frameworks/Libraries:} ReactJS, Next.js, Express, .NET, Ant Design, dayjs. \\
+     \textbf{Databases:} MySQL, MongoDB, Elasticsearch. \\
+     \textbf{Concepts:} Data Structures and Algorithms, OOP, DBMS, Event-Driven Architecture, WebSockets, REST APIs, OIDC, Authentication. \\
+     \textbf{Tools/Platforms:} AWS S3, Amazon Cognito, Git, Kubernetes, Docker, RabbitMQ, OpenAI Agents SDK, Google Indexing API, Bing Indexing API.
+    }}
+\end{itemize}
+
+
+\end{document}
